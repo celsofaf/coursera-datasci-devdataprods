@@ -6,4 +6,4 @@ Hello! This is my very first Shiny App. It is part of a [Coursera](http://www.co
 The app can be accessed [here at Shiny Apps](https://celsofaf.shinyapps.io/coursera-datasci-devdataprods/)  
 Basic documentation, written in RStudio Presenter, can [be found here](http://rpubs.com/celsofaf/39562)  
   
-Source codes for the app and the presentation are here at my GitHub. Enjoy!
+Source codes for the app and the presentation are right here at my GitHub. Enjoy!
