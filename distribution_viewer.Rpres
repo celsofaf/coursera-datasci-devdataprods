@@ -1,0 +1,42 @@
+Distribution Viewer
+========================================================
+## A simple Shiny app viewer for samples on three distributions
+
+author: Celso Araujo  
+date: 10/nov/2014
+
+[Go to the app!](https://celsofaf.shinyapps.io/app-02/)  
+[Source code](https://github.com/celsofaf/coursera-datasci-devdataprods)  
+
+Introduction
+========================================================
+
+This is my first Shiny App. I had the idea to make a simple distribution viewer taking samples. Three distributions are provided: Normal, Uniform and Beta.  
+
+For each distribution, the user can choose the sample size and the distribution parameters. A histogram and a basic statistical summary will be presented. The generated sample will also be available.  
+
+Enjoy!
+
+Normal Example
+========================================================
+
+A sample of size 100 for the standard normal distribution (mean = 0, standard deviation = 1):
+```{r, fig.width=15}
+hist(rnorm(100), col="orange")
+```
+
+Uniform Example
+========================================================
+
+A sample of size 200 for the uniform distribution with endpoints -1 and 1:
+```{r, fig.width=15}
+hist(runif(200, -1, 1), col="orange")
+```
+
+Beta Example
+========================================================
+
+A sample of size 350 for the beta distribution with shape parameters 1 and 3, non-centrality parameter 2 and endpoints -2 and 5:
+```{r, fig.width=15}
+hist(-2 + rbeta(350,1,3,2) * (5 - -2), col="orange")
+```
